@@ -13,6 +13,7 @@ app.use(express.json());
 const port = process.env.PORT || 5000;
 
 app.use("/api/contacts",require("./routes/contactRoutes")) //Middleware
+app.use("/api/users",require("./routes/userRoutes")) //Middleware
 app.use(errorHandler);
 app.listen(port,()=>
 {
